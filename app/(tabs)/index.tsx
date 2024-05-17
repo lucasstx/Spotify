@@ -1,6 +1,8 @@
 import React from 'react';
 import Tela01 from '@/src/telas/tela01';
 import { View, StatusBar, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { AppRoutes } from '@/src/routes/app.routes';
 
 export default function HomeScreen() {
   return <>
@@ -10,6 +12,8 @@ export default function HomeScreen() {
       animated={true}
       translucent={true}
     />
-    <Tela01/>
-    </>
+    <AppRoutes/>
+  </>
+
+
 }
