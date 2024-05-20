@@ -4,6 +4,9 @@ import { Image, StyleSheet } from "react-native";
 const { Navigator, Screen } = createBottomTabNavigator();
 import Tela01 from "../telas/tela01";
 import Tela02 from "../telas/tela02";
+import Tela03 from "../telas/tela03";
+import TelaBuscar from "../telas/TelaBuscar";
+import Tela04 from "../telas/tela04";
 export function AppRoutes() {
     return (
         <Navigator initialRouteName="Início" screenOptions={{
@@ -26,10 +29,24 @@ export function AppRoutes() {
                     )
                 }}
             />
-            <Screen name="Buscar" component={Tela02}
+            <Screen name="Buscar" component={TelaBuscar}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <Image source={focused ? require('../imagens/lupa.png') : require('../imagens/lupa.png')} style={style.icon} />
+                    )
+                }}
+            />
+            <Screen name="Biblioteca" component={Tela01}
+                options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={focused ? require('../imagens/library.png') : require('../imagens/library.png')} style={style.icon} />
+                    )
+                }}
+            />
+            <Screen name="Premium" component={Tela01}
+                options={{
+                    tabBarIcon: ({ focused }) => (
+                        <Image source={focused ? require('../imagens/premium.png') : require('../imagens/premium.png')} style={style.icon} />
                     )
                 }}
             />

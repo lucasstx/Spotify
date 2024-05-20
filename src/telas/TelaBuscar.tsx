@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import HeaderPesquisa from "./Componentes/Tela02/headerPesquisa";
 import ViewMusicas from "./Componentes/Tela03/viewMusicas";
 
-export default function Tela03() {
+export default function TelaBuscar() {
     return (
         <SafeAreaView style={style.safeArea}>
             <LinearGradient colors={['rgba(34, 34, 34, 1)', 'rgba(23, 23, 23, 1)', 'rgba(23, 20, 20, 1)']} style={style.fundo} />
